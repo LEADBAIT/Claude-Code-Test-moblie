@@ -1,0 +1,13 @@
+{
+  "name": "sumit-api-client",
+  "version": "1.0.0",
+  "description": "API client for SUMIT (sumit.co.il) business management and invoicing platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/example.js",
+    "test": "node src/test-connection.js"
+  },
+  "keywords": ["sumit", "officeguy", "invoice", "api", "israel"],
+  "license": "MIT",
+  "type": "module"
+}

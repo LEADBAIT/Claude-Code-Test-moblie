@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/example.js",
-    "test": "node src/test-connection.js"
+    "test": "node src/test-connection.js",
+    "income": "node src/income-summary.js"
   },
   "keywords": ["sumit", "officeguy", "invoice", "api", "israel"],
   "license": "MIT",

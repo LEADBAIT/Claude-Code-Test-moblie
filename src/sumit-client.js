@@ -153,6 +153,48 @@ export class SumitClient {
   }
 
   // ---------------------------------------------------------------------------
+  // Search / List Documents
+  // ---------------------------------------------------------------------------
+
+  /**
+   * Search documents by date range, type, and other filters.
+   * @param {Object} filters
+   * @param {string} [filters.fromDate] - Start date (YYYY-MM-DD)
+   * @param {string} [filters.toDate]   - End date (YYYY-MM-DD)
+   * @param {number} [filters.type]     - Document type filter
+   * @param {number} [filters.page=1]   - Page number
+   * @param {number} [filters.pageSize=50] - Results per page
+   */
+  async searchDocuments(filters = {}) {
+    return this.#request('/api/accounting/documents/search/', {
+      FromDate: filters.fromDate,
+      ToDate: filters.toDate,
+      DocumentType: filters.type,
+      Page: filters.page ?? 1,
+      PageSize: filters.pageSize ?? 50,
+    });
+  }
+
+  /**
+   * Fetch ALL documents across multiple pages for a given filter.
+   */
+  async searchAllDocuments(filters = {}) {
+    const allDocuments = [];
+    let page = 1;
+    let hasMore = true;
+
+    while (hasMore) {
+      const result = await this.searchDocuments({ ...filters, page, pageSize: 50 });
+      const docs = result.Documents || [];
+      allDocuments.push(...docs);
+      hasMore = docs.length === 50;
+      page++;
+    }
+
+    return allDocuments;
+  }
+
+  // ---------------------------------------------------------------------------
   // Expenses
   // ---------------------------------------------------------------------------
 

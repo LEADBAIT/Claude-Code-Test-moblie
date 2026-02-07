@@ -5,6 +5,7 @@
  *   SUMIT_COMPANY_ID=<your-id> SUMIT_API_KEY=<your-key> node src/test-connection.js
  */
 
+import './env.js';
 import { SumitClient, SumitApiError } from './index.js';
 
 const COMPANY_ID = process.env.SUMIT_COMPANY_ID;

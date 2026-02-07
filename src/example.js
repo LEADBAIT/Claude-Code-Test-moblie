@@ -7,6 +7,7 @@
  * Get your credentials at: https://app.sumit.co.il/developers/keys/
  */
 
+import './env.js';
 import { SumitClient, DocumentTypes, SumitApiError } from './index.js';
 
 const COMPANY_ID = process.env.SUMIT_COMPANY_ID;

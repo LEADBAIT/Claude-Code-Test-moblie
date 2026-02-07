@@ -8,6 +8,7 @@
  *   SUMIT_COMPANY_ID=79304428 SUMIT_API_KEY=<your-key> node src/income-summary.js
  */
 
+import './env.js';
 import { SumitClient, DocumentTypes, SumitApiError } from './index.js';
 
 const COMPANY_ID = process.env.SUMIT_COMPANY_ID;

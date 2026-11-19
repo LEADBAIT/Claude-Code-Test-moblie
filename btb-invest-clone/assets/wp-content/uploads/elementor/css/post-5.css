@@ -1,0 +1,94 @@
+.elementor-kit-5{--e-global-color-primary:#050505;--e-global-color-text:#050505;--e-global-color-accent:#EBEBEB;--e-global-color-8498b05:#FBF0EF;--e-global-color-5b1de74:#EFFAF4;--e-global-color-eaf3af4:#EFBFBB;--e-global-color-d7086b1:#89DBB2;--e-global-color-b28249b:#1569AE;--e-global-color-2369ae5:#B6C9DB;--e-global-color-221e5b6:#545454;--e-global-color-658487f:#FDD247;--e-global-color-2482ef1:#154D80;--e-global-color-f735f36:#8C8C8C;--e-global-color-4825a33:#000000;--e-global-color-07a0d7e:#FFFFFF;--e-global-color-4ac4135:#000000;--e-global-color-b759cc3:#000000;--e-global-color-075e05f:#182130;--e-global-color-2edfa93:#F8BDB9;--e-global-color-96bfd17:#89DBB2;--e-global-color-89685a6:#C3D8FC;--e-global-color-c9262da:#F2F2F2;--e-global-color-83daf38:#3873F9;--e-global-color-d25ab53:#FFFFFF;--e-global-color-7727024:#406CB4;--e-global-color-1146656:#406CB4;--e-global-color-013102b:#10152D;--e-global-color-33db185:#FF0B7C;--e-global-color-c1fbe58:#00DDC2;--e-global-typography-primary-font-family:"Almoni";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Almoni";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Almoni";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Almoni";--e-global-typography-accent-font-weight:500;color:var( --e-global-color-text );font-family:"Almoni", Sans-serif;}.elementor-kit-5 e-page-transition{background-color:#FFBC7D;}.elementor-kit-5 a{font-family:"Almoni", Sans-serif;}.elementor-kit-5 h1{color:var( --e-global-color-text );}.elementor-kit-5 h2{color:var( --e-global-color-text );}.elementor-kit-5 h3{color:var( --e-global-color-text );}.elementor-kit-5 h4{color:var( --e-global-color-text );font-family:"Almoni", Sans-serif;}.elementor-kit-5 h5{color:var( --e-global-color-text );font-family:"Almoni", Sans-serif;}.elementor-kit-5 h6{color:var( --e-global-color-text );font-family:"Almoni", Sans-serif;}.elementor-kit-5 button,.elementor-kit-5 input[type="button"],.elementor-kit-5 input[type="submit"],.elementor-kit-5 .elementor-button{padding:0px 0px 0px 0px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1440px;}.e-con{--container-max-width:1440px;--container-default-padding-top:0px;--container-default-padding-right:0px;--container-default-padding-bottom:0px;--container-default-padding-left:0px;}.elementor-widget:not(:last-child){--kit-widget-spacing:0px;}.elementor-element{--widgets-spacing:0px 0px;--widgets-spacing-row:0px;--widgets-spacing-column:0px;}{}h1.entry-title{display:var(--page-title-display);}.site-header .site-branding{flex-direction:column;align-items:stretch;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}.site-footer .site-branding{flex-direction:column;align-items:stretch;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS */.full-width-btn .elementor-button-link{
+    width: 100%;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 200;
+	font-display: auto;
+	src: url('../../2025/02/almoni-ultralight-aaa.eot');
+	src: url('../../2025/02/almoni-ultralight-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-ultralight-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-ultralight-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('../../2025/02/almoni-thin-aaa.eot');
+	src: url('../../2025/02/almoni-thin-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-thin-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-thin-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('../../2025/02/almoni-light-aaa.eot');
+	src: url('../../2025/02/almoni-light-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-light-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-light-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../../2025/02/almoni-regular-aaa.eot');
+	src: url('../../2025/02/almoni-regular-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-regular-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-regular-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../2025/02/almoni-medium-aaa.eot');
+	src: url('../../2025/02/almoni-medium-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-medium-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-medium-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../../2025/02/almoni-demibold-aaa.eot');
+	src: url('../../2025/02/almoni-demibold-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-demibold-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-demibold-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('../../2025/02/almoni-bold-aaa.eot');
+	src: url('../../2025/02/almoni-bold-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-bold-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-bold-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../2025/02/almoni-ultrabold-aaa.eot');
+	src: url('../../2025/02/almoni-ultrabold-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-ultrabold-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-ultrabold-aaa.woff') format('woff');
+}
+@font-face {
+	font-family: 'Almoni';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('../../2025/02/almoni-black-aaa.eot');
+	src: url('../../2025/02/almoni-black-aaa.eot') format('embedded-opentype'),
+		url('../../2025/02/almoni-black-aaa.woff2') format('woff2'),
+		url('../../2025/02/almoni-black-aaa.woff') format('woff');
+}
+/* End Custom Fonts CSS */

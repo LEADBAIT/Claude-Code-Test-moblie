@@ -1,0 +1,191 @@
+/* === Base Swiper Wrapper === */
+.table-slider-container-uco {
+    overflow: hidden;
+}
+
+/* === Swiper Slide Container === */
+.table-container {
+    width: 100%;
+}
+
+/* === Swiper Slide Columns === */
+.table-slider-container-uco .swiper-slide {
+    height: 100% !important;
+}
+
+.table-slider-container-uco .column {
+    flex: 1;
+    width: 100%;
+    padding: 10px 0 0;
+    text-align: center;
+    transition: background-color .3s ease;
+    border-radius: 20px;
+}
+
+.table-slider-container-uco .cell {
+    display: flex;
+    flex-direction: column;
+    padding: min(29px, 1.5vw) 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: min(24px, 1.25vw);
+    white-space: nowrap;
+    color: #74828F;
+    transition: color .3s ease;
+}
+
+.header {
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: min(68px, 3.5vw);
+    max-height: 110px;
+    min-height: 110px;
+    text-align: center;
+    transition: color .3s ease;
+}
+
+/* === Hover Styles (Desktop Only) === */
+@media (min-width: 768px) {
+    .table-container {
+        display: flex;
+    }
+
+    .table-container .swiper-slide {
+        flex: 1;
+    }
+
+    .column:not(.fields-name):hover {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .column:not(.fields-name):hover .cell {
+        border-color: transparent;
+    }
+
+    .column:not(.fields-name):hover .header {
+        color: #ffffff!important;
+    }
+
+    .cell .field-name-mobile {
+        display: none;
+    }
+}
+
+/* === Touch Devices (Disable Hover Effects) === */
+@media (hover: none) and (pointer: coarse) {
+    .column:hover {
+        background-color: unset !important;
+    }
+
+    .fourth-column:hover .cell {
+        border-color: unset !important;
+    }
+}
+
+/* === Highlighted Column === */
+.highlight {
+    background-color: #89DBB2;
+    border-radius: 20px;
+}
+
+.highlight .cell,
+.highlight .header {
+    color: #fff;
+}
+
+.highlight .cell {
+    border: none;
+}
+
+/* === Fields Name Column === */
+.fields-name .cell {
+    text-align: right!important;
+    padding-right: min(100px, 5.2vw);
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .table-slider-container-uco {
+        margin: 0 -210px;
+    }
+
+    .table-slider-container-uco .column {
+        width: auto !important;
+        max-width: none !important;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        pointer-events: none;
+        height: 100% !important;
+    }
+
+    .table-slider-container-uco .swiper-slide {
+        height: 100% !important;
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-slider-container-uco .swiper-pagination {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: unset!important;
+        right: unset!important;
+        left: unset!important;
+        top: unset!important;
+    }
+
+    .table-slider-container-uco .swiper-pagination .swiper-pagination-bullet{
+        transition: background-color .3s ease-in-out, width .5s ease-in-out, height .5s ease-in-out;
+    }
+
+    .table-slider-container-uco .swiper-slide-active .header {
+        color: #ffffff!important;
+    }
+
+    .table-slider-container-uco .header {
+        font-size: 5vw;
+        max-height: 60px;
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-slider-container-uco .cell {
+        font-size: 4vw;
+        padding: 5vw 10px;
+        white-space: normal!important;
+    }
+
+    .table-slider-container-uco .cell .value {
+        font-weight: 900;
+    }
+
+    .table-slider-container-uco .column .cell:last-child {
+        border-bottom: none;
+    }
+
+    .table-slider-container-uco .last-column .cell {
+        padding-right: 5vw;
+    }
+}
+
+/*!* === Extra Small Screens === *!*/
+/*@media (max-width: 480px) {*/
+/*    .table-slider-container-uco .header {*/
+/*        font-size: 6vw;*/
+/*    }*/
+
+/*    .table-slider-container-uco .cell {*/
+/*        font-size: 5vw;*/
+/*        padding: 6vw 10px;*/
+/*    }*/
+/*}*/

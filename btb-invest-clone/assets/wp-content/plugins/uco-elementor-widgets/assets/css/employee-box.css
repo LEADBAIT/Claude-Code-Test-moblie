@@ -1,0 +1,218 @@
+.employee-box-wrap {
+    display: flex;
+}
+
+.uco-employee-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor:pointer;
+}
+
+.uco-employee-box .image-wrap {
+    border-radius: 50%;
+    overflow: hidden;
+    width: min(336px,20.5vw);
+    height: min(336px,20.5vw);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+
+
+.uco-employee-box .employee-photo {
+    position: relative;
+    width: fit-content;
+}
+
+.uco-employee-box:hover .image-wrap {
+    filter: grayscale(0);
+}
+
+.uco-employee-box:hover .popup-arrow {
+    left: 10px!important;
+}
+
+.uco-employee-box .image-wrap img {
+    width: 100%;
+}
+
+.uco-employee-box .meta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.uco-employee-box .meta-info .employee-name {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.uco-employee-box .meta-info .uco-employee-position {
+    font-size: 30px;
+    line-height: 130%;
+    display: inline-block;
+}
+
+.uco-employee-box .employee-photo .popup-arrow {
+    position: absolute;
+    background-color: #7C6A5E;
+    border-radius: 50%;
+    z-index: 1;
+    width: min(72px,3.75vw);
+    height: min(72px,3.75vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: min(50px,2.6vw);
+    left: min(30px,1.53vw);
+    transition: left 0.9s ease;
+    padding: 10px;
+}
+
+
+.uco-employee-box .meta-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.employee-dialog {
+    border: none;
+    max-width: min(1200px,80%);
+    padding: 0;
+    overflow: unset;
+}
+
+.employee-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+    transition: background 0.3s ease;
+}
+
+.employee-dialog .employee-dialog-content {
+    display: flex;
+    position: relative;
+    padding-bottom: min(104px,5.4vw);
+    gap: min(50px,2.6vw);
+}
+
+@media screen and (max-width: 768px) {
+    .employee-dialog {
+        max-width: 80%;
+    }
+    .employee-dialog .employee-dialog-content{
+        flex-direction: column;
+    }
+}
+
+.employee-dialog .employee-dialog-content .image-wrap {
+    width: 40%;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.employee-dialog .employee-dialog-content .image-wrap img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.employee-dialog .employee-dialog-content .employee-info {
+    display: flex;
+    flex-direction: column;
+    padding: min(76px,4vw) min(50px,2.6vw) min(50px,2.6vw) min(130px,6.7vw);
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .employee-dialog {
+        max-width: 80%;
+    }
+    .employee-dialog .employee-dialog-content{
+        flex-direction: column;
+    }
+
+    .employee-dialog .employee-dialog-content .employee-info {
+        width: 100%;
+    }
+
+    .employee-dialog .employee-dialog-content .image-wrap {
+        width: 100%;
+        max-height: 300px;
+    }
+
+
+}
+
+.employee-dialog .employee-dialog-content .employee-info .meta {
+    /*margin-bottom: 40px;*/
+}
+
+.employee-dialog .employee-dialog-content .employee-info .employee-description {
+    font-size: 26px;
+    border-bottom: 1px solid #EBEBEB;
+    color: rgba(5, 5, 5, 0.5);
+}
+
+.employee-dialog .employee-dialog-content .employee-info .socials-links {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.employee-dialog .employee-dialog-content .employee-info .socials-links a {
+    display: flex;
+    outline:none;
+}
+
+.employee-dialog .employee-dialog-content .employee-info .socials-links svg {
+    width: 20px;
+    height: 20px;
+    outline:none!important;
+}
+
+
+.employee-dialog .close-btn{
+    background-color: #050505;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .employee-dialog .close-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .employee-dialog .close-btn svg {
+        width: 10px;
+    }
+
+    .uco-employee-box .image-wrap {
+        width: 230px;
+        height: 230px;
+    }
+
+    .uco-employee-box .employee-photo .popup-arrow {
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        left: 10px;
+    }
+}
